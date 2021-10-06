@@ -1,0 +1,101 @@
+nav {
+    display: inline-block;
+    height: 100%;
+}
+
+ul {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(65, 229, 235, 0.3);
+    transition: .3s;
+    overflow: hidden;
+}
+
+ul li {
+    display: block;
+    height: 55px;
+    width: 85%;
+    margin: 9px;
+    border-radius: 5px;
+    position: relative;
+    transition: .3;
+}
+
+ul .line {
+    height: 2px;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+ul .bottom {
+    position: relative;
+    top: calc(53% - 1px);
+}
+
+ul .profile {
+    display: block;
+    height: 90px;
+    width: 85%;
+    position: relative;
+    top: 53%;
+}
+
+ul .profile span {
+    position: relative;
+    top: 28px;
+}
+
+ul .profile::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 19px;
+    left: 6px;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid rgb(10, 77, 202);
+    background-image: url("http://q1.qlogo.cn/g?b=qq&nk=1216595344&s=640");
+	background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+ul li i {
+    font-size: 40px;
+    position: absolute;
+    margin: 0 0 0 13px;
+}
+
+ul li span {
+    position: relative;
+    top: 12px;
+    left: 74px;
+    font: 500 20px '';
+    opacity: 0;
+    transition: .1s;
+    user-select: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+ul:hover {
+    width: 180px;
+}
+
+ul li:hover {
+    background-color: rgba(31, 172, 182, 0.6);
+}
+
+ul:hover span {
+    opacity: 1;
+}

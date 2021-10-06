@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url("../imags/Cursor.png"), default;
+    list-style: none;
+    overflow-y: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url("https://ftp.bmp.ovh/imgs/2021/07/a6a26eda0d13b4c5.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
+    overflow: hidden;
+    height: 100%;
+}

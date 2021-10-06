@@ -1,0 +1,61 @@
+body {
+    background-color: #39c5bb;
+}
+h1 {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.pout {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 20px;
+}
+input {
+    display: inline-block;
+    background-color: rgb(226, 219, 219, .5);
+    size: 200px 500px;
+}
+.notice {
+    color: rgb(117, 98, 98);
+    text-align: center;
+}
+.notice2 {
+    color: rgb(117, 98, 98);
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.in {
+    text-align: center;
+}
+.in>div {
+    display: inline-block;
+}
+.bottom {
+    padding-top: 100px;
+    margin-right: 50px;
+    float: right;
+}
+.out {
+    text-align: center;
+}
+textarea {
+    text-align: left;
+    border-width: 3px;
+    border-color: #139188;
+    background-color: #7dd2dd;
+    opacity: 0.7;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none;
+}
+#btn {
+    padding-top: 20px;
+    text-align: center;
+}
+.reslut {
+    width: 500px;
+    height: 300px;
+}

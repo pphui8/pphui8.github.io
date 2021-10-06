@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.fa {
+    color: rgba(255, 255, 255, 0.781);
+    margin: 10px 5px;
+    font-size: 3em !important;
+}
+
+.fa:hover {
+    color: #35c9bb;
+}

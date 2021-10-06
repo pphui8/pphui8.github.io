@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狗屁不通总结生成器</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/article.js"></script>
+</head>
+<body>
+    <h1>狗屁不通总结生成器</h1>
+    <p class="notice">生成一篇300字左右的实验总结</p>
+    <div class="in">
+        <div>
+            <p>实验主题</p>
+            <textarea name="none" id="topic" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <p>实验涉及的知识点</p>
+            <p class="notice2">使用逗号分割</p>
+            <p class="notice2">最好写3~5个</p>
+            <textarea name="none" id="detail" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div id="btn">
+        <button type="button" onclick="getArticle()">生成总结</button>
+        <button type="button" onclick="addExample()">来个样例</button>
+    </div>
+    <p class="pout">⬇</p>
+    <div class="out">
+        <p>输出</p>
+        <textarea name="none" id="out" cols="30" rows="10" class="reslut"></textarea>
+    </div>
+    <div class="bottom">written by <a href="https://github.com/pphui8/BullShitSummary">pphui8</link></div>
+</body>
+</html>
