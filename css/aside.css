@@ -46,8 +46,15 @@ ul .profile {
 }
 
 ul .profile span {
-    position: relative;
-    top: 28px;
+    position: absolute;
+    display: inline-block;
+    top: 24px;
+    left: 79px;
+    width: 74px;
+    word-break: normal;
+    font-size: smaller;
+    font-weight: 300px;
+    color: rgb(56, 55, 55);
 }
 
 ul .profile::before {
