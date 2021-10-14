@@ -1,0 +1,72 @@
+body {
+    background-color: #39c5bb;
+}
+header {
+    text-align: center;
+}
+input::placeholder {
+    color: #1faca2;
+}
+header p {
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+}
+.red_text {
+    color: red;
+}
+.tip {
+    font-weight: lighter;
+    font-size: 1px;
+}
+section {
+    background-color: rgb(122, 111, 111, .3);
+}
+ul li {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 20%;
+    position: relative;
+}
+ul li div {
+    display: inline-block;
+}
+ul li .declear {
+    width: 100px;
+    text-align: right;
+}
+ul li input {
+    width: 200px;
+}
+ul li .getConfigCode {
+    width: 110px;
+    position: absolute;
+    left: -13px;
+    top: 0px;
+    color: #0d8078;
+}
+ul li .agree {
+    width: 40px;
+    margin-left: 50px;
+    user-select: none;
+}
+ul img {
+    width: 100px;
+    height: 100px;
+    margin-top: 6px;
+    margin-left: 30%;
+}
+form .confirm {
+    margin-left: 40%;
+    color: #0d8078;
+}
+ul li .topic_like .topics {
+    width: 10px;
+}
+ul li .topic_like label {
+    user-select: none;
+}
+audio {
+    width: 300px;
+}

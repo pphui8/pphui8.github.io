@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>注册</h1>
+        <p>想成为一个 <a href="#">huihuibolg</a> 的写手吗？赶紧注册一个账号吧！</p>
+        <p>or<a href="#">已有账号</a></p>
+    </header>
+    <section class="register_form">
+        <form action="url" method="" name="register">
+            <ul>
+                <li>
+                    <div class="declear"><b>用户名:</b></div>
+                    <div class="inp">
+                        <input type="text" name="username" maxlength="20" placeholder="这是你的昵称" autofocus="autofocus" required="required">
+                    </div>
+                </li>
+                <li>
+                    <div class="declear"><b>密码:</b></div>
+                    <input type="password" name="password" placeholder="6-16位字符组成，区分大小写" required="required">
+                </li>
+                <li>
+                    <div class="declear"><b>确认密码:</b></div>
+                    <input type="password" name="password_repeat" placeholder="两次输入必须一致哦" required="required">
+                </li>
+                <li>
+                    <div class="declear"><b>手机号码:</b></div>
+                    <input type="number" name="phone_nnumber" required="required">
+                </li>
+                <li>
+                    <div class="declear"><button class="getConfigCode">点击获取验证码</button></div>
+                    <input type="password" name="" required="required">
+                </li>
+                <li>
+                    <div class="declear"><b>上传头像:</b></div>
+                    <input type="file" value="上传图片">
+                    <div class="tip">以下为非必填</div>
+                </li>
+                <img src="./profile.webp" alt="">
+                <li>
+                    <div class="declear"><b>出生日期:</b></div>
+                    <input type="date" name="brith_date" id="brith_date">
+                </li>
+                <li>
+                    <div class="declear"><b>文章喜好:</b></div>
+                    <div class="topic_like">
+                        <input type="checkbox" id="view" class="topics">
+                        <label for="view">风景</label>
+                        <input type="checkbox" id="anime" class="topics">
+                        <label for="anime">二次元</label>
+                        <input type="checkbox" id="cs" class="topics">
+                        <label for="cs">前端技术</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="declear"><b>喜欢的颜色:</b></div>
+                    <input type="color" name="color" id="">
+                </li>
+                <li>
+                    <input type="checkbox" id="agree" class="agree">
+                    <label for="agree">是否同意<a href="#">用户规约</a></label> 
+                </li>
+            </ul>
+            <button class="confirm" id="confirm">确认提交</button>
+        </form>
+    </section>
+    <footer>
+        <a href="https://pphui8.me">主页</a><br>
+        <p>bgm:</p>
+        <audio
+            controls="controls"
+            loop="loop"
+            autoplay="autoplay"
+            src="http://img-cdn2.515ppt.com/sound/00/32/37/84/323784_3e326d9c64e065f3514662393d9badca.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </footer>
+</body>
+</html>
