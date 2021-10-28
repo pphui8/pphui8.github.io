@@ -20,6 +20,11 @@
     transition: 0s;
     opacity: 0;
 }
+.container-fluid .hidden_box #in_text3 {
+    transform: translate(0, 100%);
+    transition: 0s;
+    opacity: 0;
+}
 .container-fluid .hidden_box h1 {
     color: white;
     font-size: 66px;
