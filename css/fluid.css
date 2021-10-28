@@ -17,4 +17,5 @@ h1 {
 }
 .container-fluid p {
     color: rgb(253, 253, 253);
+    user-select: none;
 }
