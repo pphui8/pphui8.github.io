@@ -11,4 +11,10 @@ function loaddown() {
     tmp.style.transition = "2s ease";
     tmp.style.transform = "none";
     tmp.style.opacity = 1;
+
+    // 底边栏
+    var tmp = document.getElementById("footer_trans");
+    tmp.style.transition = "2s ease";
+    tmp.style.transform = "none";
+    tmp.style.opacity = 1;
 }

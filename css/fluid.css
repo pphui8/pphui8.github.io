@@ -11,9 +11,6 @@
     margin: auto;
     color: white;
 }
-.container-fluid .hidden_box {
-    overflow: hidden;
-}
 .container-fluid .hidden_box #in_text1,
 .container-fluid .hidden_box #in_text2 {
     transform: translate(0, -100%);

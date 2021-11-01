@@ -19,3 +19,6 @@ body {
     overflow: hidden;
     height: 100%;
 }
+.hidden_box {
+    overflow: hidden;
+}
