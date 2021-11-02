@@ -17,4 +17,8 @@ function loaddown() {
     tmp.style.transition = "2s ease";
     tmp.style.transform = "none";
     tmp.style.opacity = 1;
+
+    // 侧边栏
+    var tmp = document.getElementById("side_trans");
+    tmp.style.animationName = "disappre";
 }

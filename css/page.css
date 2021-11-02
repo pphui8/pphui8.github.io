@@ -22,3 +22,11 @@ body {
 .hidden_box {
     overflow: hidden;
 }
+
+.load_interface {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}

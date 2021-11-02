@@ -21,7 +21,9 @@ ul {
     background-color: rgba(65, 229, 235, 0.3);
     transition: .3s;
     overflow: hidden;
-    animation: disappre 2s ease 0s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
 }
 
 ul li {
