@@ -10,15 +10,16 @@ body {
 * {
     margin: 0;
     padding: 0;
+    cursor: url("../imags/Cursor.png"), default;
 }
 header {
     height: 70px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.226);
+    background-color: rgba(53, 201, 187, 0.7);
 }
 header .main_page {
     height: 100%;
-    width: 20%;
+    width: 150px;
     min-width: 150px;
     position: relative;
     transition: .2s;
@@ -43,7 +44,7 @@ header .main_page .profile {
 header .main_page p {
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 84px;
     user-select: none;
 }
 header .main_page:hover {
@@ -59,7 +60,7 @@ ul li {
     width: 85%;
     height: 50px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.205);
+    background-color: rgba(53, 201, 187, 0.8);
     margin: auto;
     margin-top: 8px;
     border-radius: 30px;
@@ -80,7 +81,8 @@ ul li::after {
 }
 ul li:hover {
     width: 90%;
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(53, 201, 187);
+    opacity: none;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.699);
 }
 a {

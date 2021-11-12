@@ -18,12 +18,14 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(65, 229, 235, 0.3);
+    background-color: rgba(53, 201, 187, 0.3);
     transition: .3s;
+    transform: translate(-100%, 0);
     overflow: hidden;
     animation-duration: 2s;
     animation-timing-function: ease;
     animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
 ul li {
