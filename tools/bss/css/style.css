@@ -1,10 +1,54 @@
 body {
-    background-color: #39c5bb;
+    background: url("https://w.wallhaven.cc/full/z8/wallhaven-z8dg9y.png");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
+    height: 100%;
 }
 h1 {
     margin-top: 100px;
     margin-bottom: 0px;
     text-align: center;
+}
+nav {
+    height: 70px;
+    position: relative;
+    background-color: #39c6bb;
+    opacity: .8;
+}
+nav .main_page {
+    height: 100%;
+    width: 150px;
+    min-width: 150px;
+    position: relative;
+    transition: .2s;
+    cursor: pointer;
+}
+nav .main_page .profile {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid rgb(10, 77, 202);
+    background-image: url("http://q1.qlogo.cn/g?b=qq&nk=1292750686&s=640");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: .3s;
+}
+nav .main_page p {
+    position: absolute;
+    top: 10%;
+    left: 84px;
+    user-select: none;
+}
+nav .main_page:hover {
+    background-color: rgba(0, 0, 0, 0.425);
 }
 .pout {
     text-align: center;

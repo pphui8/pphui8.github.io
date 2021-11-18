@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function back() {
+            location.replace("../index.html")
+        }
+        function transto(link) {
+            location.replace("./" + link)
+        }
+    </script>
 </head>
 <body>
+    <nav>
+        <div class="main_page" onclick="back()">
+            <div class="profile"></div>
+            <p>返回</p>
+        </div>
+    </nav>
     <header>
         <h1>注册</h1>
         <p>想成为一个 <a href="#">huihuibolg</a> 的写手吗？赶紧注册一个账号吧！</p>
@@ -72,8 +86,6 @@
         </form>
     </section>
     <footer>
-        <a href="https://pphui8.me">主页</a><br>
-        <p>bgm:</p>
         <audio
             controls="controls"
             loop="loop"

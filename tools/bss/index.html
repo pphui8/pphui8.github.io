@@ -7,8 +7,22 @@
     <title>狗屁不通总结生成器</title>
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./js/article.js"></script>
+    <script>
+        function back() {
+            location.replace("../index.html")
+        }
+        function transto(link) {
+            location.replace("./" + link)
+        }
+    </script>
 </head>
 <body>
+    <nav>
+        <div class="main_page" onclick="back()">
+            <div class="profile"></div>
+            <p>返回</p>
+        </div>
+    </nav>
     <h1>狗屁不通总结生成器</h1>
     <p class="notice">生成一篇300字左右的实验总结</p>
     <div class="in">

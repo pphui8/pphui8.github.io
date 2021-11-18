@@ -68,7 +68,7 @@ ul .profile span {
     word-break: normal;
     font-size: smaller;
     font-weight: 300px;
-    color: rgb(56, 55, 55);
+    color: rgba(252, 252, 252, 0.637);
 }
 
 ul .profile::before {

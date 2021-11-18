@@ -12,12 +12,12 @@ body {
     padding: 0;
     cursor: url("../imags/Cursor.png"), default;
 }
-header {
+nav {
     height: 70px;
     position: relative;
     background-color: rgba(53, 201, 187, 0.7);
 }
-header .main_page {
+nav .main_page {
     height: 100%;
     width: 150px;
     min-width: 150px;
@@ -25,7 +25,7 @@ header .main_page {
     transition: .2s;
     cursor: pointer;
 }
-header .main_page .profile {
+nav .main_page .profile {
     display: inline-block;
     position: absolute;
     top: 8px;
@@ -41,13 +41,13 @@ header .main_page .profile {
     overflow: hidden;
     transition: .3s;
 }
-header .main_page p {
+nav .main_page p {
     position: absolute;
     top: 20px;
     left: 84px;
     user-select: none;
 }
-header .main_page:hover {
+nav .main_page:hover {
     background-color: rgba(0, 0, 0, 0.425);
 }
 h1 {
