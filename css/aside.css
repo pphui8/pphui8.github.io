@@ -42,13 +42,11 @@ ul .line {
     height: 2px;
     width: 80%;
     background-color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
 }
 
 ul .bottom {
     position: relative;
-    top: calc(53% - 1px);
+    top: calc(48% - 1px);
 }
 
 ul .profile {
@@ -56,7 +54,7 @@ ul .profile {
     height: 90px;
     width: 85%;
     position: relative;
-    top: 53%;
+    top: 48%;
 }
 
 ul .profile span {
