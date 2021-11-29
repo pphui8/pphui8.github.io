@@ -15,15 +15,29 @@ body {
 nav {
     height: 70px;
     position: relative;
-    background-color: rgba(53, 201, 187, 0.7);
+    background-image: linear-gradient(135deg, rgb(74, 221, 206, .6) 10%, rgb(47, 158, 147) 100%);
+    user-select: none;
+}
+nav ul {
+    height: 100%;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li {
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 150px;
+    transition: .3s;
+}
+nav ul li:hover {
+    background-color: #29a195;
 }
 nav .main_page {
     height: 100%;
     width: 150px;
-    min-width: 150px;
     position: relative;
     transition: .2s;
-    cursor: pointer;
 }
 nav .main_page .profile {
     display: inline-block;
@@ -39,28 +53,39 @@ nav .main_page .profile {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-    transition: .3s;
 }
 nav .main_page p {
     position: absolute;
     top: 20px;
     left: 84px;
-    user-select: none;
 }
-nav .main_page:hover {
-    background-color: rgba(0, 0, 0, 0.425);
+nav ul .tools {
+    width: 100px;
+}
+nav .tools p {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+nav ul .lab {
+    width: 130px;
+}
+nav .lab p {
+    position: absolute;
+    top: 20px;
+    left: 30px;
 }
 h1 {
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
 }
-ul li {
+.list ul li {
     display: block;
     width: 85%;
     height: 50px;
     position: relative;
-    background-color: rgba(53, 201, 187, 0.8);
+    background-image: linear-gradient(135deg, rgba(74, 221, 206, 0.753) 10%, rgb(47, 158, 147) 100%);
     margin: auto;
     margin-top: 8px;
     border-radius: 30px;
@@ -68,18 +93,18 @@ ul li {
     transition: .5s;
     user-select: none;
 }
-ul li .contain {
+.list ul li .contain {
     position: absolute;
     left: 40px;
     top: 12px;
 }
-ul li::after {
+.list ul li::after {
     content: ">";
     position: absolute;
     right: 22px;
     top: 13px;
 }
-ul li:hover {
+.list ul li:hover {
     width: 90%;
     background-color: rgba(53, 201, 187);
     opacity: none;

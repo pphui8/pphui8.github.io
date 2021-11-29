@@ -19,33 +19,43 @@
 </head>
 <body>
     <nav>
-        <div class="main_page" onclick="back()">
-            <div class="profile"></div>
-            <p>主页</p>
-        </div>
+        <ul>
+            <li class="main_page" onclick="back()">
+                <div class="profile"></div>
+                <p>pphui8</p>
+            </li>
+            <li class="tools" onclick="transto('#')">
+                <p>tools</p>
+            </li>
+            <li class="lab" onclick="transto('#')">
+                <p>laboratory</p>
+            </li>
+        </ul>
     </nav>
     <h1>实用的小工具们</h1>
-    <ul>
-        <li id="link_1" onclick="transto('bss')">
-            <div class="contain">
-                <p>狗屁不通总结生成器<p>
-            </div>
-        </li>
-        <li id="link_3" onclick="transto('login_page')">
-            <div class="contain">
-                <p>huihuiblog的登陆页面<p>
-            </div>
-        </li>
-        <li id="link_2" onclick="transto('DragonLoading')">
-            <div class="contain">
-                <p>龙女仆加载动画<p>
-            </div>
-        </li>
-        <li id="link_4" onclick="">
-            <div class="contain">
-                <p>浏览器主页（施工中）<p>
-            </div>
-        </li>
-    </ul>
+    <section class="list">
+        <ul>
+            <li id="link_1" onclick="transto('bss')">
+                <div class="contain">
+                    <p>狗屁不通总结生成器<p>
+                </div>
+            </li>
+            <li id="link_3" onclick="transto('login_page')">
+                <div class="contain">
+                    <p>huihuiblog的登陆页面<p>
+                </div>
+            </li>
+            <li id="link_2" onclick="transto('DragonLoading')">
+                <div class="contain">
+                    <p>龙女仆加载动画<p>
+                </div>
+            </li>
+            <li id="link_4" onclick="">
+                <div class="contain">
+                    <p>浏览器主页（施工中）<p>
+                </div>
+            </li>
+        </ul>
+    </section>
 </body>
 </html>
