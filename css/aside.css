@@ -141,3 +141,7 @@ ul:hover .profile::before {
 ul:hover span {
     opacity: 1;
 }
+
+.fas {
+    transform: translateY(6px);
+}
