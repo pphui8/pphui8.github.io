@@ -1,0 +1,63 @@
+nav {
+    height: 70px;
+    position: relative;
+    background-color: rgb(255, 255, 255, 0);
+    user-select: none;
+}
+nav ul {
+    height: 100%;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li {
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 150px;
+    transition: .3s;
+}
+nav ul li:hover {
+    background-color: #29a195;
+}
+nav .main_page {
+    height: 100%;
+    width: 150px;
+    position: relative;
+    transition: .2s;
+}
+nav .main_page .profile {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid rgb(10, 77, 202);
+    background-image: url("http://q1.qlogo.cn/g?b=qq&nk=1292750686&s=640");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+nav .main_page p {
+    position: absolute;
+    top: 20px;
+    left: 84px;
+}
+nav ul .tools {
+    width: 100px;
+}
+nav .tools p {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+nav ul .lab {
+    width: 130px;
+}
+nav .lab p {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
