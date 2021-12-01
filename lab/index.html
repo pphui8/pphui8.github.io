@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-ch">
 
 <head>
     <meta charset="UTF-8">
@@ -7,76 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
     <title>Laboratory</title>
     <script>
         function back() {
-            location.replace("../index.html")
+            window.location = "../index.html"
         }
         function transto(link) {
-            location.replace("./" + link)
+            window.location = "../" + link
         }
         function goto_s(link) {
-            location.replace("https://" + link)
+            window.open("https://" + link)
+        }
+        function goto_n(link) {
+            window.open("http://" + link)
         }
     </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            cursor: url("../imags/Cursor.png"), default;
-        }
-        body {
-            height: 100%;
-            width: 100%;
-            background-image: -moz-linear-gradient(135deg, rgb(57, 197, 187), rgb(203, 173, 255));
-            background-image: -webkit-linear-gradient(135deg, rgb(57, 197, 187), rgb(203, 173, 255));
-            background-image: linear-gradient(135deg, rgb(57, 197, 187), rgb(203, 173, 255));
-        }
-        .title {
-            color: #fff;
-            text-align: center;
-            font-size: 60px;
-            margin-top: 20px;
-            font-family: 'Dancing Script', cursive;
-        }
-        .Tests {
-            background-color: rgb(255, 255, 255, .4);
-            position: relative;
-            left: 50%;
-            top: 20px;
-            transform: translateX(-50%);
-            width: 80%;
-            border-radius: 23px;
-            overflow: auto;
-        }
-        .Tests ul li {
-            width: 204px;
-            height: 200px;
-            background-color: #35c9ba8c;
-            float: left;
-            margin: 40px;
-            border-radius: 25px;
-            transition: .3s;
-        }
-        .Tests ul li h1 {
-            font-size: 40px;
-            margin-top: 30px;
-            font-size: 28px;
-            text-align: center;
-            text-indent: .3em;
-            color: #fff;
-        }
-        .Tests ul li p {
-            margin-top: 19px;
-            font-size: 14px;
-            text-indent: 1em;
-            color: #fff;
-        }
-        .Tests ul li:hover {
-            transform: scale(1.2, 1.2);
-        }
-    </style>
 </head>
 
 <body>
@@ -86,30 +32,34 @@
                 <div class="profile"></div>
                 <p>pphui8</p>
             </li>
-            <li class="tools" onclick="transto('#')">
+            <li class="tools" onclick="transto('tools')">
                 <p>tools</p>
             </li>
-            <li class="lab" onclick="transto('/lab')">
+            <li class="lab" onclick="transto('lab')">
                 <p>laboratory</p>
             </li>
         </ul>
     </nav>
     <h1 class="title">Laboratory</h1>
+    <p class="descrip">learning notes and some experiment</p>
     <section class="Tests">
         <ul>
+            <li class="self_intro" onclick="goto_s('github.com/pphui8/pphui8')">
+                <h1>about me</h1>
+                <p>a brief introduction</p>
+            </li>
             <li class="Server_log" onclick="goto_s('github.com/pphui8/service_logdata')">
                 <h1>server_log</h1>
                 <p>log of server development</p>
             </li>
-            <li class="rustt"></li>
-            <li class="rustt"></li>
-            <li class="rustt"></li>
-            <li class="rustt"></li>
-            <li class="rustt"></li>
-            <li class="rustt"></li>
-            <li class="rustt"></li>
-            <li class="rustt"></li>
-            <li class="rustt"></li>
+            <li class="rustt" onclick="goto_n('101.32.209.165:3324')">
+                <h1>WebServer</h1>
+                <p>a test page powered by rust</p>
+            </li>
+            <li class="rustt" onclick="goto_s('github.com/pphui8/HTML_study_note')">
+                <h1>font-end note</h1>
+                <p>font-end learning notes</p>
+            </li>
         </ul>
     </section>
 </body>

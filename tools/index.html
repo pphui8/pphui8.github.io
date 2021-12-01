@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./style.css">
     <script>
         function back() {
-            location.replace("../index.html")
+            window.location = "../index.html"
         }
         function transto(link) {
-            location.replace("./" + link)
+            window.location = "../" + link
         }
     </script>
 </head>
@@ -24,10 +24,10 @@
                 <div class="profile"></div>
                 <p>pphui8</p>
             </li>
-            <li class="tools" onclick="transto('#')">
+            <li class="tools" onclick="transto('tools')">
                 <p>tools</p>
             </li>
-            <li class="lab" onclick="transto('/lab')">
+            <li class="lab" onclick="transto('lab')">
                 <p>laboratory</p>
             </li>
         </ul>
@@ -35,17 +35,17 @@
     <h1>实用的小工具们</h1>
     <section class="list">
         <ul>
-            <li id="link_1" onclick="transto('bss')">
+            <li id="link_1" onclick="transto('/tools/bss')">
                 <div class="contain">
                     <p>狗屁不通总结生成器<p>
                 </div>
             </li>
-            <li id="link_3" onclick="transto('login_page')">
+            <li id="link_3" onclick="transto('/tools/login_page')">
                 <div class="contain">
                     <p>huihuiblog的登陆页面<p>
                 </div>
             </li>
-            <li id="link_2" onclick="transto('DragonLoading')">
+            <li id="link_2" onclick="transto('/tools/DragonLoading')">
                 <div class="contain">
                     <p>龙女仆加载动画<p>
                 </div>

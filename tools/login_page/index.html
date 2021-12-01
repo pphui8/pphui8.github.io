@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <script>
         function back() {
-            location.replace("../index.html")
+            window.location = "../../index.html"
         }
         function transto(link) {
-            location.replace("./" + link)
+            window.location = "../../" + link
         }
     </script>
 </head>
@@ -22,10 +22,10 @@
                 <div class="profile"></div>
                 <p>pphui8</p>
             </li>
-            <li class="tools" onclick="back()">
+            <li class="tools" onclick="transto('tools')">
                 <p>tools</p>
             </li>
-            <li class="lab" onclick="transto('#')">
+            <li class="lab" onclick="transto('lab')">
                 <p>laboratory</p>
             </li>
         </ul>
