@@ -1,1 +1,41 @@
-<!doctype html><html lang="zh-cn"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://pphui8.github.io/imags/favoicon.ico" type="image/x-icon"><title>todo list</title><script defer="defer" src="./static/js/main.15c92cd7.js"></script><link href="./static/css/main.65febf81.css" rel="stylesheet"></head><body class="body"><div id="root"></div></body></html>
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="https://pphui8.github.io/imags/favoicon.ico" type="image/x-icon">
+    <title>todo list</title>
+    <script defer="defer" src="./static/js/main.15c92cd7.js"></script>
+    <link href="./static/css/main.65febf81.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/nav.css">
+    <script>
+        function back() {
+            window.location = "../../index.html"
+        }
+        function transto(link) {
+            window.location = "../../" + link
+        }
+    </script>
+</head>
+
+<body class="body">
+    <nav>
+        <ul>
+            <li class="main_page" onclick="back()">
+                <div class="profile"></div>
+                <p>pphui8</p>
+            </li>
+            <li class="tools" onclick="transto('tools')">
+                <p>tools</p>
+            </li>
+            <li class="lab" onclick="transto('lab')">
+                <p>laboratory</p>
+            </li>
+        </ul>
+    </nav>
+    <div id="root"></div>
+</body>
+
+</html>
