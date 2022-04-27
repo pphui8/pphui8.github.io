@@ -46,7 +46,7 @@ ul .line {
 
 ul .bottom {
     position: relative;
-    top: calc(30% - 1px);
+    top: calc(30% - -100px);
 }
 
 ul .profile {
@@ -54,7 +54,7 @@ ul .profile {
     height: 90px;
     width: 85%;
     position: relative;
-    top: 30%;
+    top: 41%;
 }
 
 ul .profile span {
