@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #ffea3f;
+            position: relative;
+        }
+
+        .flip_container {
+            width: 44%;
+            height: 11%;
+            position: absolute;
+            top: 46%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .flip_container .flip {
+            position: relative;
+            float: left;
+            width: 20%;
+            height: 100%;
+            list-style: none;
+            transition: .2s;
+            transform-origin: center;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }
+
+        .flip_container .flip .point {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotateY(0deg);
+            backface-visibility: hidden;
+        }
+
+        .flip_container .flip .point p {
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            top: calc(50% + 3px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .flip_container .flip .character {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+
+        .flip_container .flip .character b {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 35px;
+            user-select: none;
+        }
+    </style>
+    <script src="animeLoop.js"></script>
+</head>
+<ul class="flip_container">
+    <li class="f_1 flip">
+        <div class="point">
+            <p></p>
+        </div>
+        <div class="character"><b>﹢</b></div>
+    </li>
+    <li class="f_2 flip">
+        <div class="point">
+            <p></p>
+        </div>
+        <div class="character"><b>+</b></div>
+    </li>
+    <li class="f_3 flip">
+        <div class="point">
+            <p></p>
+        </div>
+        <div class="character"><b>a</b></div>
+    </li>
+    <li class="f_4 flip">
+        <div class="point">
+            <p></p>
+        </div>
+        <div class="character"><b>a</b></div>
+    </li>
+    <li class="f_5 flip">
+        <div class="point">
+            <p></p>
+        </div>
+        <div class="character"><b>a</b></div>
+    </li>
+</ul>
+<script>
+    var emojis = [
+        "➜➜➜➜➜",
+        "▼▲▼▲▼",
+        "◆◇◆◇◆",
+        "◯＠◯◯◯",
+        "◯●◉●◯",
+        "◯➜●➜＠",
+        "A+B+C",
+        "1+1=2",
+        "▲+▼=◆",
+        "◠+◡=◯",
+        "for{}",
+        ".name",
+        "if(){",
+        "✩★★★★",
+        "★★✩★★",
+        "★★★★✩",
+        "✭✮✭✮✭",
+        "❋❊❋❊❋",
+        "✦✧✦✧✦",
+        "(^ο^)",
+        "(≧▽≦)",
+        "(ˊ▽ˋ)",
+        "4+4=8",
+        "ο+ο=８",
+        "♩+♩=♪",
+        "====>",
+        "⋯‒=≡✩",
+        "▼▲‒△▽",
+        "(‾▽‾)",
+        "(╵◡╵)",
+        "(^▿^)",
+        "凸凹凸凹凸",
+        "♪^ワ^♪",
+        "#—▁—)",
+        "3/3=♀",
+        "(◎д◎)",
+        "(°ρ°)",
+        "S➜⚀➜⚁",
+        "⚂➜$➜⚃",
+        "⚄➜⚅➜G",
+        "σ\"✩><",
+        "ム月ヒヒ灬",
+        "舟夕止口刀"
+    ]
+
+    function Loop() {
+        // 获取ul，然后再获取li
+        var ul = document.getElementsByClassName('flip_container')
+        var lis = ul[0].getElementsByTagName("li")
+        // 随机获取一组emoji
+        var emoji = emojis[Math.round(Math.random() * emojis.length)]
+        // 遍历li 然后修改文本内容 以及设置延时修改transform
+        for (let i = 0; i < lis.length; i++) {
+            const element = lis[i];
+            var b = element.getElementsByTagName('b')
+            b[0].innerHTML = emoji[i]
+            setTimeout(function () {
+                element.style.transform = 'rotateY(-180deg)'
+            }, 1000 * (i + 1))
+        }
+        // 翻回去
+        for (let i = 0; i < lis.length; i++) {
+            const element = lis[i];
+            element.style.transform = 'rotateY(0deg)';
+        }
+    }
+
+    window.onload = function () {
+        Loop();
+        setInterval(Loop, 7000);
+    }
+</script>
+</div>
+
+</html>
