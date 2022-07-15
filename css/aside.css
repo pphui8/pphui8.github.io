@@ -46,7 +46,7 @@ ul .line {
 
 ul .bottom {
     position: relative;
-    top: calc(30% - -100px);
+    top: calc(30% - -111px);
 }
 
 ul .profile {
@@ -54,7 +54,7 @@ ul .profile {
     height: 90px;
     width: 85%;
     position: relative;
-    top: 41%;
+    top: 47%;
 }
 
 ul .profile span {
@@ -65,8 +65,8 @@ ul .profile span {
     width: 74px;
     word-break: normal;
     font-size: smaller;
-    font-weight: 300px;
-    color: rgba(252, 252, 252, 0.637);
+    font-weight: 500px;
+    color: rgb(60, 60, 60);
 }
 
 ul .profile::before {
